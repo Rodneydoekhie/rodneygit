@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function vergelijken() {
+            var value1 = document.getElementById("textinput1").value ;
+            var value2 = document.getElementById("textinput2").value ;
+            alert(value1);
+            alert(value2);
+                
+                if (value1.value == value2.value) { 
+                alert("waardes zijn gelijk")
+            
+
+                }   
+                    else {
+                    alert("waardes zijn niet gelijk")
+                    }
+        
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="textinput1" > 
+    <input type="text" id="textinput2" > 
+    <input type="button" value="klik hier" onclick=vergelijken() >
+</body>
+
+</html>
