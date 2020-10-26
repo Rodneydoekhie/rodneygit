@@ -1,0 +1,20 @@
+<script>
+    function zoeken() {    
+        var invoer1 = document.getElementById("text1").value;
+        var invoer2 = document.getElementById("text2").value;
+        var count = 0;
+        for( var i = 0; i < invoer1.length ; i++ ){
+            if(invoer2 == invoer1[i]) {
+                count++;
+            }
+        } alert(count);
+    }
+
+      
+</script>
+
+
+
+<input type="text" id="text1" placeholder="voer hier iets in"> 
+<input type="text" id="text2" placeholder="voer hier een letter in">
+<input type="button" value="Verzenden" onclick="zoeken()">
