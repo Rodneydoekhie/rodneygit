@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="STYLESHEET" href="opdracht 7.css" type="text/css">
+    <title>Afbeeldingen</title> 
+</head>
+
+<body>
+
+    <img id="AFBA" src="sunset.jpg" width="600" height="400" />
+    <img id="AFBB" src="winter.jpg" width="600" height="400" />
+    <input type="button" onclick="afba()" value="KNA" />
+    <input type="button" onclick="afbb()" value="KNB" />
+    <input type="button" onclick="hetzelfde()" value="KNC" />
+
+
+    <script>
+ 
+    var counter = 0;
+    var myPictures1 = ["fall.jpg", "winter.jpg", "spring.jpg", "sunset.jpg"];
+    var myPictures2 = ["fall.jpg", "winter.jpg", "spring.jpg", "sunset.jpg"];
+
+    function afba() {
+        counter += 1;
+        if (counter > myPictures1.length -1) {
+        counter = 0;
+        }
+      AFBA.src = myPictures1[counter];
+      }
+
+    function afbb(){
+        counter += 1;
+        if (counter > myPictures2.length -1){
+            counter = 0;
+        }
+        AFBB.src = myPictures2[counter];
+        
+    }
+
+      function hetzelfde(){
+        console.log('we zitten in hetzelfde')
+      var AFBA = document.getElementById('AFBA').src;
+      var AFBB = document.getElementById('AFBB').src; 
+         console.log(AFBA)
+          
+         if (AFBA == AFBB)
+         alert('ze zijn hetzelfde')
+      }
+
+        
+    {
+       
+   }
+  </script>
+
+  
+</body>
+</html>

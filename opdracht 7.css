@@ -1,0 +1,31 @@
+input {
+    background-color: #5baac9;
+    border: 2px;
+    border-color: rgb(136, 92, 90);
+    border-radius: 8px;
+    color: rgb(253, 247, 246);
+    font-size: 6pt;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  img {
+    display: block;
+    width: 450px;
+    height: 350px;
+    padding:15px;
+  }
+
+  #AFBA{
+    float: left;
+  }
+
+  #AFBB {
+    float: right;
+  }

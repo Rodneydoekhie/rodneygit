@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De 4 Seizoenen</title>
+</head>
+<body>
+    
+    <img id="target" src="wintersized.jpg" width="1200" height="600" />
+    <input type="button" onclick="nextPic()" value="change image" />
+
+
+<script>
+
+    var target = document.getElementById('target');
+    var counter = 0;
+    var myPictures = [
+        "wintersized.jpg",
+        "springsized.jpg",
+        "summersized.jpg",
+        "fallsized.jpg"
+    ];
+
+    function nextPic() {
+      counter += 1;
+      if (counter > myPictures.length -1) {
+        counter = 0;
+      }
+      target.src = myPictures[counter];
+    }
+</script>
+
+</body>
+</html>
